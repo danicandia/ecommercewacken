@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'h h h h h h h'
+        'ml c c c c c c'
+        'f f f f f f f';
+    gap: 20px;
+}
+
+.header {
+    grid-area: h;
+    background-color: rgb(24, 23, 97);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.menulateral {
+    grid-area: ml;
+    background-color: white;
+    color: black;
+}
+
+.contenido {
+    grid-area: c;
+    background-color: white;
+
+}
+
+.footer {
+    grid-area: f;
+    background-color: rgb(24, 23, 97);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.flex-container {
+    display: flex;
+    padding-left: 0.5em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    background-color: rgb(24, 23, 97);
+}
+
+button:focus {
+    background-color: rgb(52, 51, 95);
+}
+
+button:hover{
+    background-color: rgb(14, 10, 226);
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
